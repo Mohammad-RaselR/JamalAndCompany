@@ -1,14 +1,16 @@
-# Jamal & Company Limited — Architectural Interiors & Spatial Design Studio
+# JAMAL AND COMPANY — Architectural Interiors & Spatial Design Studio
 
 > **Official Registration**: Incorporated under the Companies Act (Act XVIII of 1994)  
 > **Registration No**: C-172356/2018 | **Issue No**: 165375 | **Incorporation Date**: October 8, 2018  
-> **Jurisdiction**: Dhaka, Bangladesh (Registrar of Joint Stock Companies and Firms)
+> **Jurisdiction**: Dhaka, Bangladesh (Registrar of Joint Stock Companies and Firms)  
+> **Headquarters Address**: 455 Shawrapara, Dhaka, Bangladesh  
+> **Direct Mobile**: 01516594220 (+880 1516-594220) | **Email**: abuyosufakib@gmail.com
 
 ---
 
 ## Overview
 
-**Jamal & Company Limited** is an architectural interior design and turnkey construction practice headquartered in Dhaka, Bangladesh. The studio specializes in minimalist luxury residences, executive corporate suites, and bespoke spatial architecture across Gulshan, Banani, Baridhara Diplomatic Zone, and broader Dhaka.
+**JAMAL AND COMPANY** is an architectural interior design and turnkey construction practice headquartered at 455 Shawrapara, Dhaka, Bangladesh. The studio specializes in minimalist luxury residences, executive corporate suites, and bespoke spatial architecture across Dhaka.
 
 This production-ready web application embodies a **monochrome Scandinavian and Swiss modernist architectural design philosophy** inspired by Notion and world-class architectural publications, delivering zero visual noise, authentic materiality, and rich interactive client tools.
 
