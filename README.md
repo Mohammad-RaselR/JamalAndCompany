@@ -4,7 +4,7 @@
 > **Registration No**: C-172356/2018 | **Issue No**: 165375 | **Incorporation Date**: October 8, 2018  
 > **Jurisdiction**: Dhaka, Bangladesh (Registrar of Joint Stock Companies and Firms)  
 > **Headquarters Address**: 455 Shawrapara, Dhaka, Bangladesh  
-> **Direct Mobile**: 01516594220 (+880 1516-594220) | **Email**: abuyosufakib@gmail.com
+> **Direct Mobile**: 01720021961 (+880 1720-021961) | **Email**: abuyosufakib@gmail.com
 
 ---
 
