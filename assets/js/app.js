@@ -613,33 +613,52 @@ function initMobileMenu() {
   const nav = document.querySelector('.nav-links');
   if (!btn || !nav) return;
 
-  btn.addEventListener('click', () => {
-    const isShown = nav.style.display === 'flex';
-    if (isShown) {
-      nav.style.display = 'none';
+  function toggleMenu(forceClose = false) {
+    const isCurrentlyActive = nav.classList.contains('active');
+    if (forceClose || isCurrentlyActive) {
+      nav.classList.remove('active');
       btn.innerHTML = '&#9776;';
+      btn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
     } else {
-      nav.style.display = 'flex';
-      nav.style.flexDirection = 'column';
-      nav.style.position = 'absolute';
-      nav.style.top = '100%';
-      nav.style.left = '0';
-      nav.style.width = '100%';
-      nav.style.background = 'var(--bg-main)';
-      nav.style.padding = '2rem';
-      nav.style.borderBottom = '1px solid var(--border-medium)';
+      nav.classList.add('active');
       btn.innerHTML = '&times;';
+      btn.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
     }
+  }
+
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleMenu();
   });
 
   // Close when clicking nav link
   const links = nav.querySelectorAll('.nav-link');
   links.forEach(l => {
     l.addEventListener('click', () => {
-      if (window.innerWidth < 768) {
-        nav.style.display = 'none';
-        btn.innerHTML = '&#9776;';
+      if (window.innerWidth <= 768) {
+        toggleMenu(true);
       }
     });
+  });
+
+  // Close when clicking outside on mobile
+  document.addEventListener('click', (e) => {
+    if (window.innerWidth <= 768 && nav.classList.contains('active')) {
+      if (!nav.contains(e.target) && !btn.contains(e.target)) {
+        toggleMenu(true);
+      }
+    }
+  });
+
+  // Reset body overflow on window resize if menu was left open
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      nav.classList.remove('active');
+      btn.innerHTML = '&#9776;';
+      btn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
   });
 }
